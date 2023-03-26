@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__BuildAndDeploy", "__BuildAndDeploy", "{3D36916B-2367-4624-BDCF-864173796B30}"
+	ProjectSection(SolutionItems) = preProject
+		..\build-release-notes.ps1 = ..\build-release-notes.ps1
+		..\.github\workflows\build.yml = ..\.github\workflows\build.yml
+		..\Bump-Version.ps1 = ..\Bump-Version.ps1
+		..\Create-Release.ps1 = ..\Create-Release.ps1
+		..\Reset-WipReleaseNotes.ps1 = ..\Reset-WipReleaseNotes.ps1
+		..\Set-Version.ps1 = ..\Set-Version.ps1
+		..\version.txt = ..\version.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__Documentation", "__Documentation", "{61C05782-A253-4EDD-9463-04912EB73870}"
+	ProjectSection(SolutionItems) = preProject
+		..\release-notes\full-release-notes.md = ..\release-notes\full-release-notes.md
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+		..\release-notes\wip-release-notes.md = ..\release-notes\wip-release-notes.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stravaig.DeferredLogging.Abstractions", "Stravaig.DeferredLogging.Abstractions\Stravaig.DeferredLogging.Abstractions.csproj", "{7F66A94D-CD8D-4892-A8FD-5D1A74417ABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stravaig.DeferredLogging", "Stravaig.DeferredLogging\Stravaig.DeferredLogging.csproj", "{CADF5396-E762-4035-B7C4-41929530C370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stravaig.DeferredLogging.Tests", "Stravaig.DeferredLogging.Tests\Stravaig.DeferredLogging.Tests.csproj", "{0AD28DA5-267F-4363-82DF-84BBDC9E8355}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {064958BE-42C5-4268-8132-49EF6D009D99}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CADF5396-E762-4035-B7C4-41929530C370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADF5396-E762-4035-B7C4-41929530C370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADF5396-E762-4035-B7C4-41929530C370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADF5396-E762-4035-B7C4-41929530C370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F66A94D-CD8D-4892-A8FD-5D1A74417ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F66A94D-CD8D-4892-A8FD-5D1A74417ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F66A94D-CD8D-4892-A8FD-5D1A74417ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F66A94D-CD8D-4892-A8FD-5D1A74417ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD28DA5-267F-4363-82DF-84BBDC9E8355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD28DA5-267F-4363-82DF-84BBDC9E8355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD28DA5-267F-4363-82DF-84BBDC9E8355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD28DA5-267F-4363-82DF-84BBDC9E8355}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+EndGlobal
